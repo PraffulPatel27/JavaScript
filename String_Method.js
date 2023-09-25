@@ -35,7 +35,7 @@ console.log(nname);
 console.log(nname.toLowerCase());
 
 //******* slice() *******/
-let newsstring = fname.slice(0, 3);
+let newsstring = fname.slice(0, 3);  //** It last index using index-1  ****/
 console.log(newsstring);
 
 let substring = nname.slice(1);
