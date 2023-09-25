@@ -2,5 +2,6 @@
 
 //constant declaring
 const pi = 3.14;
-pi= 22/7;       //***** It dose not change ******/
+// pi= 22/7;       //***** It dose not change ******/
 console.log(pi);
+console.log(pi*2*2); 
