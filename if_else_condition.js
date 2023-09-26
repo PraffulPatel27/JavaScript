@@ -21,3 +21,44 @@ if (num%2 === 0)
 else{
     console.log("number is odd");
 }
+
+
+//**** truthy and falsy values ******/
+
+// falsy values
+
+// false
+// ""
+// null
+// undefined
+// 0
+
+// let firstName = "";
+// let firstName = false;
+// let firstName = 0;
+// let firstName = null;
+let firstName = undefined;
+
+if (firstName)
+{
+    console.log(firstName);
+}
+else {
+    console.log("firstName is kind a falsy empty");
+}
+
+
+// ***** truthy values ****
+
+// let rightName = "poorvi";
+// let rightName = 1;
+let rightName = -1
+
+
+if (rightName)
+{
+    console.log(rightName);
+}
+else {
+    console.log("firstName is kind a falsy empty");
+}
