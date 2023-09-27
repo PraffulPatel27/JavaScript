@@ -46,3 +46,13 @@ for (var j=0 ; j<=9; j++)
 }
 console.log(j);  //While using var it gives output because scope of j is global
 
+
+//**** do while  ****/
+let n=10;
+
+do 
+{
+    console.log(n);
+    n++;
+} while (n<=10)
+console.log(`current value of n is ${n}`);
