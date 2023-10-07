@@ -6,6 +6,7 @@
 let string = "Hello World";
 let age = 21;
 let isLoggedIn = false;
+let state;
 
     /****************************************/
   //   number => 2 to power 53
@@ -17,6 +18,7 @@ let isLoggedIn = false;
   //   symbol => unique 
     /****************************************/
 
+console.log(typeof state);     // undefined
 console.log(typeof string);    // string
 console.log(typeof age);       // number
 console.log(typeof null);      // object
