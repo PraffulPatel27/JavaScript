@@ -47,13 +47,14 @@ chaih ()   // Undefined
 const addTwo = (num1, num2) => {
     return num1 + num2;
 }
+// While using '{} or curly braces we need to return something 
 
 console.log(addTwo (2, 3));   // 5 
 
 // *** Another way ***
 const addThree = (num1, num2, num3) => (num1 + num2 + num3);
 // If we have only one line in function then we can write like this
-// We don't need to write return keyword and curly braces
+// while using paranthesis we don't need to return something
 
 console.log(addThree (2, 3, 2));  // 7
 
@@ -62,13 +63,13 @@ console.log(addThree (2, 3, 2));  // 7
 const addtemp = (num1, num2) => ({username: "Prafful"});
 // While returning object in arrow function we need to wrap it in () paranthesis
 
-console.log(3, 4);   // 3 4
+console.log(addtemp(3, 4));   // 3 4
 
 
 // *** Allows synatx ***
 
 const Array = [2, 4, 3, 9, 8]
 
-Array.forEach (function () {})
-Array.forEach (() => ())  //arrow function
-Array.forEach()
+// Array.forEach (function () {})
+// Array.forEach (() => ())  //arrow function
+// Array.forEach()
