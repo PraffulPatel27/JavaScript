@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Dom Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <div>
+        <h1 id="title" class="heading"> DOM learning on Chai aur Code
+            <span style="display: none;"> This is span </span>
+            <h2>Lorem ipsum dolor sit amet consectetur</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur</h2>
+        </h1>
+        
+
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+        <input type="password" name="" id="">
+    </div> 
+
+    <ul>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
+        <li class="list-item">Four</li>
+    </ul>
+    
+    <!-- When we want all values using keys we use ( document.getElementById('title') ) -->
+
+    <!-- When we want keys of values we use ( document.getElementById('title').getAttribute('id') ) -->
+    <!-- document.getElementById('title').getAttribute('id') -->
+ 
+      <!-- When we want to set values -->
+      <!-- document.getElementById('title').setAttribute('class', 'test') -->
+      <!-- document.getElementById('title').setAttribute('class', 'test heading') -->
+      
+     <!-- Store values in variable 
+         const data= document.getElementById('title')
+     --> 
+
+     <!--     ************* Add style in DOM *************
+        data.style.backgroundColor = 'red'
+        data.style.paddingtop = "10px"
+        data.style.borderadius = "10px"
+     -->
+
+     <!-- Extract content from html 
+        **** It shows all content either it is hide ****
+         data.textContent
+
+        **** It shows only visible content of html ****
+         data.innerText  
+
+        *** It shows whole inner html content with tag ***
+        data.innerHTML
+        data.innerTe
+         
+    -->
+
+
+</body>
+</html>

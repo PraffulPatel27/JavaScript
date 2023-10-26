@@ -1,0 +1,82 @@
+<!-- 
+    ****** HTML Collection ******
+    data.getElementsByClassName('heading')
+
+    ** !important query selector **
+      
+    1. document.querySelector('h1')  // first h1 tag elements
+    
+    2. document.querySelectorAll('h2') // It gives only first coming h2 tag elements
+
+    3. document.querySelector('.heading') // class selector
+
+    4. document.querySelector('#title') // id selector
+
+    5. document.querySelector('input[type="password"]')   // attribute selector
+
+   /--- change the color of the list item --/
+    const myul = document.querySelector('ul')
+    const l1= myul.querySelector('li')
+    l1.style.backgroundColor = 'orange'
+    l1.style.padding = "10px"
+    l1.innerText = "ten"   (we can change the text using DOM)
+    
+
+    /--- querySelectorAll --/
+    const mylist = document.querySelectorAll ('li')
+    // It looks like array but it is not array it is NodeList
+    NodeList(3) [li, li, li]     (gives NodeList it is not a array but here we cannot sue map,filter,reduce)
+
+        /--- change the color of the list item --/
+          // we can use property on particular item like
+          mylist[0].style.color = "green"
+          mylist[0].style.backgroundColor = "yellow"
+
+           const myh1 = document.querySelectorAll('h1')
+           myh1[0].style.color = "blue"
+    
+    / ----- Use forEach loop on item ----- /
+      - const myli = document.querySelectorAll ('li')
+        
+      - myli.forEach (function (l) {
+         l.style.backgroundColor = "orange"
+        })
+
+    /****** Whenever we want to use map on NodeList we need to convert NodeList to array then use ********** /
+
+  
+    
+    / -------------- HTMLCollection --------------- /
+       // It is also not a array 
+    / ** We cannot use forEachLoop on HTMLLCollection **
+      
+      - const mylistItem = document.getElementsByClassName ('list-item')
+      - const convertedarr = Array.from(mylistItem)
+      - convertedarr.forEach (function (l) {
+         l.style.color = "orange"
+        })
+
+   * querySelector - (select particular element)
+   * querySelectorAll - (select all the elements)
+   * getElementsByClassName - (select all the elements of class name)
+   * getElementById - (select all the elements of id name)
+   * getElementsByTagName - (select all the elements of tag name)
+
+
+ //------------------------- Page Manipulation ----------------------------//
+     
+    - const myselect  =document.querySelectorAll ('.mw-headline')
+    
+    - myselect.forEach (function (h) {
+       h.style.color = "green"
+    })
+
+    - myselect.forEach (function (h) {
+       h.style.backgroundColor = "grey"
+    })
+
+    -myselect.forEach (function (h) {
+      h.style.padding = "10px"
+    })
+
+-->
