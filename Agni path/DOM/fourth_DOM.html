@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="language">Javascript</li>
+    </ul>
+
+</body>
+<script>
+
+   //***** Add multiple items ******
+    function addLanguage (langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("python")
+    addLanguage("typescript")
+
+   // ***** Add multiple items in Optimise way ******
+    function addOtpiLanguage (langName) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOtpiLanguage('go lang')
+    addOtpiLanguage ('Java')
+
+
+
+    //************* Edit values ************
+      //while using replace method we need reference 
+     
+      const secondLang = document.querySelector("li:nth-child(2)")
+      console.log(secondLang);       //gives second item
+
+    //   secondLang.innerHTML = "Mojo"  
+      //We can change with innerHTML 
+
+      const newli = document.createElement('li')
+      newli.textContent = "Mojo"
+      secondLang.replaceWith(newli) 
+    
+
+    //***** Edit Values ******
+    // const firstLang = document.querySelector("li:first-child")
+    // firstLang.outerHTML = '<li>Typescript</li>'
+    // It will update the value but not affect the remains item
+
+
+
+    //********** Remove element ***********
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+    // It will remove the last item from the list
+
+
+
+</script>
+</html>
