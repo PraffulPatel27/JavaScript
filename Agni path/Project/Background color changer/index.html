@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+</head>
+  <style>
+    body {
+        background-color: #1D3243;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: #212121;
+        margin: 10px;
+    }
+    .canvas {
+        background-color: #FAF2E6;
+        padding: 10px 30px;
+        border-radius: 8px;
+        color: #212121;
+        text-decoration: none;
+        border: 2px solid #212121;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 50px auto;
+        height: 33rem;
+        line-height: 50px;
+    }
+    .button {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 10px;
+        cursor: pointer;
+        margin: 30px;
+    }
+    #grey {
+        background-color: #3c3939;
+        border: 3px solid #3c3939;
+    }
+    #orange {
+        background-color: #ff9800;
+        border: 3px solid #ff9800;
+    }
+    #white {
+        background-color: #fff;
+        border: 3px solid #fff;
+    }
+    #green {
+        background-color: #4caf50;
+        border: 3px solid #4caf50;
+    }
+    #blue {
+        background-color: #2196f3;
+        border: 3px solid #2196f3;
+    }
+    #yellow {
+        background-color: #ffeb3b;
+        border: 3px solid #ffeb3b;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }   
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding: 130px;
+    }
+    h2 span {
+        font-weight: 700;
+    }
+  </style>
+<body>
+    <nav>
+        <a href="/" aria-current="page">Home</a>
+    <a target="_blank" href="https://github.com/PraffulPatel27">Github Profile</a>
+
+    </nav>
+
+    <div class="canvas">
+        <h1>Color Scheme Switcher</h1>
+        <span class="button" id="grey"></span>
+        <span class="button" id="orange"></span>
+        <span class="button" id="white"></span>
+        <span class="button" id="green"></span>
+        <span class="button" id="blue"></span>
+        <span class="button" id="yellow"></span>
+
+        <h2>
+            Try clicking on the buttons above<br> 
+            <span>to change the color scheme of this page.</span>
+        </h2>
+    </div>
+    <script src="Color_change.js"></script>
+</body>
+</html>
