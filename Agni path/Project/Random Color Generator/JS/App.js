@@ -6,6 +6,10 @@ const getColor = () => {
 
     console.log(randomNumber, randomCode);
     document.body.style.backgroundColor = randomCode;
+    document.getElementById("color-code").innerText = randomCode;
+
+    // copy to clipboard
+    navigator.clipboard.writeText(randomCode);
 }
 
 //event call
